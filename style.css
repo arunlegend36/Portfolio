@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a1f;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    max-width: 800px;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(20px);
+}
+
+.about-text {
+    margin-top: 1rem;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 800px;
+}
+
+.social-item {
+    background-color: #131836;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 300px;
+    border: 1px solid #1f4068;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(19, 24, 54, 0.8);
+    border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+.social-item:hover {
+    transform: translateY(-5px) scale(1.03);
+    background-color: #1b2142;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 242, 254, 0.4);
+}
+
+.social-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.social-item .fa-instagram {
+    color: #e4405f;
+}
+
+.social-item .fa-youtube {
+    color: #ff0000;
+}
+
+/* Particles Background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: radial-gradient(circle at center, #0a0a1f 0%, #060611 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-item {
+        width: 100%;
+        max-width: 300px;
+    }
+} 
