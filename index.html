@@ -3,38 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Arun Suryawanshi - Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js"></div>
-    
-    <main class="container">
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <h1>Hi! I'm Arun Suryawanshi</h1>
-            <div class="about-text">
-                <p>Hello! I'm your friendly neighborhood Spider-Man... just kidding! This website is your quick stop to join my YouTube and Instagram adventures. Let's connect!</p>
-            </div>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.instagram.com/arunn_suryawanshi/" target="_blank" class="social-item">
-                <i class="fab fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>Follow me on Instagram</p>
-            </a>
-            <a href="https://www.youtube.com/@TheRizzGuyGaming" target="_blank" class="social-item">
-                <i class="fab fa-youtube"></i>
-                <h3>YouTube</h3>
-                <p>Watch my latest videos</p>
-            </a>
-        </div>
+    <main class="container">
+        <section id="about" class="profile-section">
+            <img src="your-photo.jpg" alt="Arun Suryawanshi" class="profile-img">
+            <h1>Arun Suryawanshi</h1>
+            <h2>Software Developer</h2>
+            <div class="about-text">
+                <p>I'm a passionate software developer with expertise in building modern web applications. 
+                   Focused on creating efficient, scalable solutions using cutting-edge technologies.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Name</h3>
+                    <p>Description of the project and technologies used.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Let's Connect</h2>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="your-resume.pdf" target="_blank" class="social-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Arun Suryawanshi. All rights reserved.</p>
+    </footer>
 </body>
-</html> 
+</html>
